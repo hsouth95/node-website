@@ -1,0 +1,14 @@
+{
+  "name": "MyWebsite",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "Harrison South <hsouth95@hotmail.co.uk>",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "3.2.4"
+  }
+}
