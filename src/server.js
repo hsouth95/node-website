@@ -8,7 +8,7 @@ const PORT = 80;
 // App
 const app = express();
 app.get('/', function (req, res) {
-  res.send('This is my final example, everything works!\n');
+  res.send('This was pushed by Github!\n');
 });
 
 app.listen(PORT);
