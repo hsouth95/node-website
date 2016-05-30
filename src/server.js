@@ -3,12 +3,12 @@
 const express = require('express');
 
 // Constants
-const PORT = 8080;
+const PORT = 80;
 
 // App
 const app = express();
 app.get('/', function (req, res) {
-  res.send('Hello world\n');
+  res.send('This is my final example, everything works!\n');
 });
 
 app.listen(PORT);
