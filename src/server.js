@@ -8,7 +8,7 @@ const PORT = 80;
 // App
 const app = express();
 app.get('/', function (req, res) {
-  var test = 1 + 1;
+  var test = 1 + 2;
   res.send('This was pushed by Github!\n' + 'This is a sum:' + test);
 });
 
