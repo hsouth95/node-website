@@ -5,7 +5,7 @@ var express = require('express'),
     nib = require('nib');
 
 // Constants
-const PORT = 8080;
+const PORT = 80;
 
 // App
 const app = express();
