@@ -4,9 +4,6 @@ var express = require('express'),
     stylus = require('stylus'),
     nib = require('nib');
 
-// Constants
-const PORT = 80;
-
 // App
 const app = express();
 
@@ -32,5 +29,6 @@ app.get('/', function (req, res) {
 	})
 });
 
-app.listen(PORT);
-console.log('Running on http://localhost:' + PORT);
+app.listen(process.env.PORT || 80, function() {
+	console.log('Running on http://localhost:' + PORT);
+});
