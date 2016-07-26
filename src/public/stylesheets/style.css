@@ -111,7 +111,7 @@ a img {
  * background color as variables
  */
 body {
-  font-family: 'Georgia';
+  font-family: 'Quicksand';
   background-color: #faf9f0;
   color: #444;
 }
@@ -129,18 +129,25 @@ header {
   color: #fff;
   font-size: 25px;
   text-align: center;
-/*
-   * Note the use of the `main-color`
-   * variable and the `darken` function
-   */
   background-color: #e44424;
   border-bottom: 1px solid #a52c14;
   text-shadow: 0px -1px 0px #a52c14;
 }
-.container {
+#profile-pic {
+  height: 300px;
+  width: auto;
+  -webkit-border-radius: 150px;
+  border-radius: 150px;
+}
+#wrapper {
   margin: 50px auto;
   padding: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
   overflow: hidden;
+}
+#wrapper h1 {
+  font-size: 2em;
 }
 .main-content {
   float: left;

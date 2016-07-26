@@ -4,13 +4,15 @@ var express = require('express'),
     stylus = require('stylus'),
     nib = require('nib');
 
-// App
 const app = express();
 
+/**
+ * Build the css pre-processor
+ */
 function compile(str, path) {
-   return stylus(str)
-          .set("filename", path)
-	  .use(nib());
+    return stylus(str)
+            .set("filename", path)
+            .use(nib());
 }
 
 app.set("views", __dirname + "/views");
@@ -22,13 +24,12 @@ app.use(stylus.middleware({
 }));
 app.use(express.static(__dirname + "/public"));
 
-
 app.get('/', function (req, res) {
-	res.render("index", {
-		title: "Home"
-	})
+    res.render("index", {
+        title: "Home"
+    })
 });
 
 app.listen(process.env.PORT || 80, function() {
-	console.log('Running on http://localhost:' + PORT);
+    console.log('Running on http://localhost:' + (process.env.PORT || 80));
 });
