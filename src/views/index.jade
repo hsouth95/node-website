@@ -1,10 +1,17 @@
 extend layout
 block introduction
-  img(src="/images/profile_picture.jpg")#profile-pic
-  p
-    h2 Currently finishing my placement year as a Software Engineer at #[a(href="bistech.co.uk") Bistech]. Where I have worked on many different projects including Dynamics CRM and many different custom applications, all of which use either C# or JavaScript. 
+    .row
+        img(src="/images/profile_picture.jpg" class="one-third column")#profile-pic
+        .two-thirds.column
+            h1 About Me
+            h2 I'm a Software Engineering student at Bournemouth University, Currently 
+                | finishing my third year on a placement for #[a(href="http://bistech.co.uk") Bistech.] 
+                | I enjoy and have attended many hackathons, creating interesting applications such as 
+                | a fast-paced stock trading game or a text-to-web messenger.
+            h2 I'm also a semi-avid runner, with ever fluctuating goals of running a half/full marathon.
+
 block skills
-  p
-    h1 Skills
-    p
-      | Programming, Awesomeness
+        p
+            h1 Skills
+            p
+                | Programming and stuff
