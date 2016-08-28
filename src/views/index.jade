@@ -4,14 +4,67 @@ block introduction
         img(src="/images/profile_picture.jpg" class="one-third column")#profile-pic
         .two-thirds.column
             h1 About Me
-            h2 I'm a Software Engineering student at Bournemouth University, Currently 
+            p I'm a Software Engineering student at Bournemouth University, Currently 
                 | finishing my third year on a placement for #[a(href="http://bistech.co.uk") Bistech.] 
                 | I enjoy and have attended many hackathons, creating interesting applications such as 
                 | a fast-paced stock trading game or a text-to-web messenger.
-            h2 I'm also a semi-avid runner, with ever fluctuating goals of running a half/full marathon.
+            p I'm also a semi-avid runner, with ever fluctuating goals of running a half/full marathon.
 
 block skills
-        p
-            h1 Skills
-            p
-                | Programming and stuff
+    h1 Programming Skills
+    .row
+        .one-third.column
+            h2 Strong Knowledge
+            ul.skill-list
+                li C#
+                li JavaScript
+                li SQL
+                li Java
+        .one-third.column
+            h2 Fair Knowledge
+            ul.skill-list
+                li Knockoutjs
+                li jQuery
+                li ASP.NET
+                li Node
+                li PHP
+        .one-third.column
+            h2 Worked With Before
+            ul.skill-list
+                li Express
+                li Docker
+                li Python
+                li Entity Framework
+                
+block projects
+    h1 Projects
+    .row
+        .one-half.column.project
+            h2 Japan Journal
+            .skill-tag C#
+            .skill-tag JavaScript
+            .skill-tag jQuery
+            .skill-tag ASP.NET
+            .skill-tag Entity Framework
+            p I built a journal for my girlfriend who at the time was doing her
+                | placement year in Japan! I used a range of technologies to
+                | create a website hosted on Azure to allow for the creation of
+                | simple journal entries alongside related images that were privately
+                | hosted on imgur. A large part of this project was trying to reduce
+                | the server-side load to allow for the cheapest possible hosting option.  
+        .one-half.column.project
+            h2 Rock-Paper-Scissor AI Game
+            .skill-tag Java
+            p First year assignment to build any game with a GUI element. I
+                | built a Rock, Paper, Scissors game with a AI twist. The player
+                | could choose the type of AI they wanted to play against, this 
+                | ranged from a simple 'random' AI which would have a 33% chance
+                | of choosing anything. A 'State' AI which used a pre-defined
+                | state diagram to choose its next play. Finally a 'Intelligent'
+                | AI which built a pattern from previous plays and would try to
+                | dictate which move you'd make next.
+
+block footer
+    p 
+        a(href="//github.com/hsouth95")
+            img(src="/images/github-icon.png")
