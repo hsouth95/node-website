@@ -152,7 +152,6 @@ header {
 #profile-pic {
   height: 300px;
   width: auto;
-  -webkit-border-radius: 150px;
   border-radius: 150px;
 }
 #wrapper {
@@ -189,6 +188,12 @@ p {
   margin-left: 10px;
   margin-bottom: 10px;
 }
+.project-row {
+  margin-bottom: 10px;
+}
+.project {
+  overflow: break-word;
+}
 .project p {
   font-size: 1em;
   margin-top: 5px;
@@ -198,7 +203,6 @@ p {
 }
 .skill-tag {
   border: 1px solid #a52c14;
-  -webkit-border-radius: 7px;
   border-radius: 7px;
   background-color: #e16e56;
   padding: 2px;

@@ -4,10 +4,10 @@ block introduction
         img(src="/images/profile_picture.jpg" class="one-third column")#profile-pic
         .two-thirds.column
             h1 About Me
-            p I'm a Software Engineering student at Bournemouth University, Currently 
-                | finishing my third year on a placement for #[a(href="http://bistech.co.uk") Bistech.] 
-                | I enjoy and have attended many hackathons, creating interesting applications such as 
-                | a fast-paced stock trading game or a text-to-web messenger.
+            p I'm a Software Engineering student at Bournemouth University, Currently
+                | in my final year studying Software Quality and Testing, Software Systems Modelling and Advanced Development.
+                | I enjoy and have attended many hackathons, creating interesting applications such as
+                | a fast-paced stock trading game and a text-to-web messenger.
             p I'm also a semi-avid runner, with ever fluctuating goals of running a half/full marathon.
 
 block skills
@@ -23,9 +23,11 @@ block skills
         .one-third.column
             h2 Fair Knowledge
             ul.skill-list
+                li Python
                 li Knockoutjs
                 li jQuery
                 li ASP.NET
+                li MVC
                 li Node
                 li PHP
         .one-third.column
@@ -33,12 +35,11 @@ block skills
             ul.skill-list
                 li Express
                 li Docker
-                li Python
                 li Entity Framework
-                
+                li Android
 block projects
     h1 Projects
-    .row
+    .row.project-row
         .one-half.column.project
             h2 Japan Journal
             .skill-tag C#
@@ -51,20 +52,52 @@ block projects
                 | create a website hosted on Azure to allow for the creation of
                 | simple journal entries alongside related images that were privately
                 | hosted on imgur. A large part of this project was trying to reduce
-                | the server-side load to allow for the cheapest possible hosting option.  
+                | the server-side load to allow for the cheapest possible hosting option.
         .one-half.column.project
             h2 Rock-Paper-Scissor AI Game
             .skill-tag Java
+            .skill-tag Game Dev
+            .skill-tag AI
             p First year assignment to build any game with a GUI element. I
                 | built a Rock, Paper, Scissors game with a AI twist. The player
-                | could choose the type of AI they wanted to play against, this 
+                | could choose the type of AI they wanted to play against, this
                 | ranged from a simple 'random' AI which would have a 33% chance
                 | of choosing anything. A 'State' AI which used a pre-defined
                 | state diagram to choose its next play. Finally a 'Intelligent'
                 | AI which built a pattern from previous plays and would try to
                 | dictate which move you'd make next.
-
+      .row.project-row
+        .one-half.column.project
+            h2 Battleships
+            .skill-tag Java
+            .skill-tag Android
+            .skill-tag Game Dev
+            p Second year assignment to build a Battleships game as an Android App.
+              | This project was a very nice introduction to Android, I utilised
+              | many of the 'neat' little features such as vibrating the phone
+              | when you hit another ship. Also had a few fun experiences of memory
+              | management! Who would've thought I'd have to do that in Java?!
+        .one-half.column.project
+            h2 Paperless Medical Clerking System for the Royal Bournemouth and Christchurch Hospital
+            .skill-tag Drupal
+            .skill-tag Project Management
+            .skill-tag PHP
+            .skill-tag Analysis
+            .skill-tag Design
+            p As part of my final year at Bournemouth University, I am required to partake in a
+              | final year project. For mine I will be converting the paper-based systems that the
+              | RBCH currently uses. I will be liaising with a client at the Hospital and will be using
+              | Drupal to create a fully functional and usable prototype.
+block jobs
+    .job
+        h2 Software Engineer
+        h2 (http://www.bistech.co.uk/)[Bistech]
+        h2 07/2015-09/2016
+        p As part of my University course we can choose to take a 10-month placement.
+          | I worked at Bistech as a Software Engineer for this. My role included looking
+          | after the various different 'off-the-shelf' products (such as Microsoft Dynamics CRM and SharePoint)
+          | and custom applications to meet business needs.
 block footer
-    p 
+    p
         a(href="//github.com/hsouth95")
             img(src="/images/github-icon.png")
