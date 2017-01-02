@@ -1,6 +1,5 @@
 (function(){
-    var navBarHeight = $("header").outerHeight(true);
-
+    let navBarHeight = $("header").outerHeight(true);
     /**
      * Shrinks the navigation bar and makes it sticky so it moves down with the page
      * @param barHeight - Height of the bar
