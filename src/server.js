@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
-var express = require('express'),
-    stylus = require('stylus'),
-    nib = require('nib');
+var express = require("express"),
+    stylus = require("stylus"),
+    nib = require("nib");
 
 const app = express();
 
@@ -24,12 +24,12 @@ app.use(stylus.middleware({
 }));
 app.use(express.static(__dirname + "/public"));
 
-app.get('/', function (req, res) {
+app.get("/", function (req, res) {
     res.render("index", {
         title: "Home"
     })
 });
 
 app.listen(process.env.PORT || 80, function() {
-    console.log('Running on http://localhost:' + (process.env.PORT || 80));
+    console.log("Running on http://localhost:" + (process.env.PORT || 80));
 });

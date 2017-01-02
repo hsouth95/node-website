@@ -6,7 +6,7 @@
   "main": "server.js",
   "private": true,
   "scripts": {
-    "start": "node src/server.js",
+    "start": "node server.js",
     "build": "./node_modules/.bin/babel --presets es2015 -d public/lib public/scripts"
   },
   "dependencies": {
