@@ -1,10 +1,8 @@
-"use strict";
-
 var express = require("express"),
     stylus = require("stylus"),
     nib = require("nib");
 
-const app = express();
+var app = express();
 
 /**
  * Build the css pre-processor
